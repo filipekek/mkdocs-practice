@@ -5,7 +5,7 @@ site_author: Filip Benes
 nav:
   - Home: index.md
   - About: 
-      Your Mom: about.md
+      Silly me: about.md
       Favicon: favi.md
 theme: 
   name: mkdocs
