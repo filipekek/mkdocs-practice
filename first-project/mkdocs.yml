@@ -1,0 +1,12 @@
+site_name: Filipekek Project
+site_url: https://filipekek.com/
+site_description: My first mkdocs
+site_author: Filip Benes
+nav:
+  - Home: index.md
+  - About: 
+      Your Mom: about.md
+      Favicon: favi.md
+theme: 
+  name: mkdocs
+  nav_style: dark
