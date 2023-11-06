@@ -1,0 +1,9 @@
+site_name: Stuff about AI
+
+nav:
+  - Home: index.md
+  - Nothing to see here: the_plan.md
+
+theme:
+  name: readthedocs
+  nav_style: dark

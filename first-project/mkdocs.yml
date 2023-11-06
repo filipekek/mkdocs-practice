@@ -5,8 +5,8 @@ site_author: Filip Benes
 nav:
   - Home: index.md
   - About: 
-      Silly me: about.md
-      Favicon: favi.md
+      - Silly me: about.md
+      - Favicon: favi.md
 theme: 
   name: mkdocs
   nav_style: dark
