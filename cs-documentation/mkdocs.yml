@@ -1,0 +1,13 @@
+site_name: Counter-Strike 2 Documentation
+
+nav:
+  - Home: home.md
+  - Installation: install.md
+  - Player Guide:
+    - Beginner: begin.md
+    - Advanced: advanced.md
+  - Skins:
+    - Skin Guide: skin.md
+    - Markets: markets.md
+
+theme: readthedocs
