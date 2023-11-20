@@ -1,1 +1,2 @@
-a
+# The Basics
+The game is about terrorists (T) and counter terrorists (CT). The main goal of the terrorists is to plant and defend the bomb. The main goal of the counter terrorists is to defuse the bomb. If either team eliminates the entire team before the bomb is planted, they immediately win the round. To win the game you need to win 13 rounds. If there is a deuce at 12 rounds, the game goes into overtime until someone wins 16 rounds or both teams win 15 rounds.
