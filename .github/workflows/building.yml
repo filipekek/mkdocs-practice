@@ -1,0 +1,29 @@
+Name: Auto Building html site
+
+
+on:
+  push:
+
+jobs:
+  build:
+    if: "contains(github.event.head_commit.message, 'Mkdocs')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout to .
+        uses: actions/checkout@v3
+        with:
+          path: .
+          
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: install and build
+        run: |
+          pip install mkdocs
+          cd cs-documentation
+          mkdocs build
+        
+
+  
