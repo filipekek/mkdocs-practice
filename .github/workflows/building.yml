@@ -1,4 +1,4 @@
-name: Auto Building html site
+name: Auto Building HTML Site
 
 
 on:
@@ -24,6 +24,19 @@ jobs:
           pip install mkdocs
           cd cs-documentation
           mkdocs build
+
+      - name: Setup pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: XXXXXX/XXXXXXXX
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
         
 
   
