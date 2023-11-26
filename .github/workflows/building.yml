@@ -22,11 +22,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: install and build
-        run: |
-          pip install mkdocs
-          cd cs-documentation
-          mkdocs build
+      # - name: install and build
+        # run: |
+          # pip install mkdocs
+          # cd cs-documentation
+          # mkdocs build
 
       - name: Setup pages
         uses: actions/configure-pages@v3
@@ -34,7 +34,7 @@ jobs:
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: cs-documentation/site
+          path: test/
 
       - name: Deploy to GitHub Pages
         id: deployment
