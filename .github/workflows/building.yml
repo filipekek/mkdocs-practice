@@ -2,6 +2,7 @@ name: Auto Building HTML Site
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   build:
