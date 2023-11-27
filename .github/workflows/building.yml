@@ -1,0 +1,45 @@
+name: Auto Building HTML Site
+
+on:
+  workflow_dispatch:
+  push:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout to .
+        uses: actions/checkout@v3
+        with:
+          path: .
+          
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: install and build
+        run: |
+          pip install mkdocs
+          cd cs-documentation
+          mkdocs build
+
+      - name: Setup pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: cs-documentation/site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.MKDOCS_PRACTICE_TOKEN }}
+  
