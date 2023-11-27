@@ -11,7 +11,7 @@ Follow the steps on the Steam website
 
 ## 2. Create an account
 After installing Steam, you will need to register or log-in to your account. This account will be used throughout your entire Steam library.
-
+a
 ## 3. Getting CS2
 Because CS2 is free, all you need to do is go to the store and in search look up: Counter-Strike 2. 
 ![](storesteam.png)
